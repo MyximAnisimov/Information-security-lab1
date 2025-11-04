@@ -26,11 +26,12 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 @Configuration
 @EnableMethodSecurity
 @EnableWebSecurity
-@SuppressWarnings("EI_EXPOSE_REP2")
 @RequiredArgsConstructor
 public class SecurityConfig {
 
+    @SuppressWarnings("EI_EXPOSE_REP2")
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
     private final UserService userService;
 
     @Bean
