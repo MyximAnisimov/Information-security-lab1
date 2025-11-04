@@ -26,6 +26,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 @Configuration
 @EnableMethodSecurity
 @EnableWebSecurity
+@SuppressWarnings("EI_EXPOSE_REP2")
 @RequiredArgsConstructor
 public class SecurityConfig {
 
